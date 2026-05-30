@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ilyass Daoudi - BTS SIO 1ère année</title>
+    
+    <!-- Méta-données SEO -->
+    <meta name="description" content="Portfolio professionnel d'Ilyass Daoudi, étudiant en 1ère année de BTS SIO (Services Informatiques aux Organisations). Découvrez mes compétences, mes projets (GLPI, Active Directory, Cisco VoIP) et ma veille technologique.">
+    <meta name="author" content="Ilyass Daoudi">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+         EN-TÊTE / NAVIGATION
+         ========================================================= -->
+    <header class="header-nav" id="header">
+        <div class="container nav-container">
+            <a href="#accueil" class="logo" id="brand-name">Ilyass Daoudi</a>
+            
+            <nav class="nav-menu" aria-label="Navigation principale">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#apropos" class="nav-link">À propos</a>
+                <a href="#parcours" class="nav-link">Mon Parcours</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#realisations" class="nav-link">Réalisations</a>
+                <a href="#veille" class="nav-link">Veille Tech</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <!-- Sélecteur de thème sombre/clair -->
+                <div class="theme-switch-wrapper" title="Changer le thème">
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle" aria-label="Activer le mode sombre">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Me Contacter</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========================================================
+             SECTION ACCUEIL (HERO)
+             ========================================================= -->
+        <section class="hero-section" id="accueil">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge">BTS SIO (Services Informatiques aux Organisations)</span>
+                    <span id="hero-option-label">Initialisation...</span>
+                    
+                    <h1>Bonjour, je suis <br><span id="hero-title">Ilyass Daoudi</span></h1>
+                    <p class="hero-subtitle" id="hero-subtitle">Étudiant en BTS SIO - 1ère année</p>
+                    
+                    <div class="hero-cta">
+                        <a href="#realisations" class="btn btn-primary">Consulter mes projets</a>
+                        <a href="#apropos" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="hero-illustration">
+                    <div class="illustration-bg"></div>
+                    <div class="illustration-card">
+                        <span class="code-line"><span class="code-comment">// Déclaration de l'étudiant</span></span>
+                        <span class="code-line"><span class="code-keyword">const</span> student = {</span>
+                        <span class="code-line">&nbsp;&nbsp;name: <span class="code-string">"Ilyass Daoudi"</span>,</span>
+                        <span class="code-line">&nbsp;&nbsp;level: <span class="code-string">"BTS SIO 1ère année"</span>,</span>
+                        <span class="code-line">&nbsp;&nbsp;status: <span class="code-string">"En apprentissage"</span>,</span>
+                        <span class="code-line">&nbsp;&nbsp;ready: <span class="code-keyword">true</span></span>
+                        <span class="code-line">};</span>
+                        <span class="code-line"></span>
+                        <span class="code-line"><span class="code-keyword">if</span> (student.ready) {</span>
+                        <span class="code-line">&nbsp;&nbsp;console.log(<span class="code-string">"Bienvenue !"</span>);</span>
+                        <span class="code-line">}</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             SECTION À PROPOS
+             ========================================================= -->
+        <section class="about-section" id="apropos" style="background-color: var(--bg-surface); transition: background-color 0.4s ease;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>À Propos de moi</h2>
+                    <p>Découvrez mon profil, mes objectifs professionnels et mes motivations en informatique.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-details">
+                        <h3>Mon Profil Académique</h3>
+                        <p class="about-description" id="about-description">
+                            Chargement de la description...
+                        </p>
+                        <p id="about-option-text">
+                            Chargement de la spécialité...
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-num">1ère</span>
+                                <span class="highlight-label">Année BTS SIO</span>
+                                <span class="highlight-desc">Bases solides acquises</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-num">5+</span>
+                                <span class="highlight-label">Projets Pratiques</span>
+                                <span class="highlight-desc">GLPI, Active Directory & Cisco</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cv-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; border-left: 1px solid var(--border-color); padding-left: 4rem;">
+                        <h4 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 1rem; text-align: center;">Tableau de Synthèse (E5)</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-bottom: 2rem; max-width: 320px;">
+                            Consultez mon tableau de synthèse des compétences E5 complété avec l'ensemble de mes réalisations.
+                        </p>
+                        <!-- Tableau E5 Téléchargeable / Bouton propre -->
+                        <a href="assets/Tableau_Synthese_Ilyass_Daoudi.pdf" download="Tableau_Synthese_E5_Ilyass_Daoudi.pdf" class="btn btn-primary" id="download-cv-btn" style="width: 100%; max-width: 280px; gap: 0.75rem;">
+                            <span>📊</span> Télécharger le Tableau E5 (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             SECTION MON PARCOURS (TIMELINE)
+             ========================================================= -->
+        <section class="parcours-section" id="parcours">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Mon Parcours</h2>
+                    <p>Mon itinéraire scolaire et mes premières expériences dans le monde du numérique.</p>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item timeline-item-left">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Depuis Septembre 2025</span>
+                            <h3 class="timeline-title">BTS SIO 1ère année</h3>
+                            <h4 class="timeline-subtitle">Lycée / Organisme de Formation</h4>
+                            <p class="timeline-desc">Apprentissage approfondi du socle commun d'informatique : réseau, développement, bases de données, sécurité des infrastructures et gestion de projets.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="timeline-item timeline-item-right">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Juin 2025</span>
+                            <h3 class="timeline-title">Baccalauréat STMG</h3>
+                            <h4 class="timeline-subtitle">Spécialité Gestion et Finance</h4>
+                            <p class="timeline-desc">Obtention du baccalauréat STMG (Sciences et Technologies du Management et de la Gestion) avec spécialité Gestion et Finance, posant les bases de la comptabilité, de l'analyse financière et du fonctionnement des organisations.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="timeline-item timeline-item-left">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Depuis Septembre 2025</span>
+                            <h3 class="timeline-title">Contrat d'Apprentissage</h3>
+                            <h4 class="timeline-subtitle">Administrateur Systèmes & Réseaux Junior</h4>
+                            <p class="timeline-desc">Mise en pratique et perfectionnement de mes compétences en entreprise : gestion de parc, administration de serveurs et support utilisateur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             SECTION COMPÉTENCES
+             ========================================================= -->
+        <section class="skills-section" id="competences" style="background-color: var(--bg-surface); transition: background-color 0.4s ease;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Compétences Référentiel SIO</h2>
+                    <p>Mes compétences techniques classées par blocs conformément au référentiel officiel du BTS SIO.</p>
+                </div>
+                
+                <!-- Les blocs sont injectés dynamiquement par app.js -->
+                <div class="skills-container" id="skills-container">
+                    <!-- Injecté par le JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             SECTION RÉALISATIONS (PROJETS)
+             ========================================================= -->
+        <section class="projects-section" id="realisations">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Mes Réalisations</h2>
+                    <p>Découvrez mes travaux pratiques et projets phares de cette année (dont le projet GLPI et nos ateliers d'infrastructure).</p>
+                </div>
+                
+                <!-- Filtres -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Tout afficher</button>
+                    <button class="filter-btn" data-filter="common">Tronc Commun (Support)</button>
+                    <button class="filter-btn" data-filter="sisr">Option SISR (Infrastructure & Réseau)</button>
+                </div>
+                
+                <!-- Grille des projets -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Les cartes projets sont injectées dynamiquement par app.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             SECTION VEILLE TECHNOLOGIQUE
+             ========================================================= -->
+        <section class="veille-section" id="veille" style="background-color: var(--bg-surface); transition: background-color 0.4s ease;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Veille Technologique</h2>
+                    <p>Activité obligatoire de veille réglementaire pour l'examen du BTS SIO.</p>
+                </div>
+                
+                <div class="veille-grid">
+                    <div class="veille-details">
+                        <div class="veille-block-intro">
+                            <span class="badge badge-slam" style="margin-bottom: 0.75rem;">Sujet d'étude</span>
+                            <h3 id="veille-subject">Chargement du sujet...</h3>
+                            <p id="veille-definition">Chargement de la définition...</p>
+                            <p class="veille-why-text" id="veille-why">Chargement des motivations...</p>
+                        </div>
+                        
+                        <div class="veille-axes-container">
+                            <h3>Axes d'analyse étudiés</h3>
+                            <div class="veille-axes-grid" id="veille-axes">
+                                <!-- Axes injectés par app.js -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <aside class="veille-sidebar">
+                        <div class="veille-box">
+                            <h3>Outils de veille</h3>
+                            <ul class="veille-tools-list" id="veille-tools">
+                                <!-- Outils injectés par app.js -->
+                            </ul>
+                        </div>
+                        
+                        <div class="veille-box">
+                            <h3>Sources & Articles clés</h3>
+                            <div class="veille-articles-list" id="veille-articles">
+                                <!-- Articles injectés par app.js -->
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             SECTION CONTACT
+             ========================================================= -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contactez-moi</h2>
+                    <p>Une question ? Une opportunité professionnelle ? N'hésitez pas à m'envoyer un message ou à me suivre.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-info-header">
+                            <h3>Discutons ensemble</h3>
+                            <p>Je réponds généralement en moins de 24 heures aux propositions professionnelles.</p>
+                        </div>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">📧</span>
+                                <div class="contact-detail-content">
+                                    <span>Mon Adresse E-mail</span>
+                                    <a href="#" id="contact-email">pro@domain.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">📍</span>
+                                <div class="contact-detail-content">
+                                    <span>Localisation</span>
+                                    <strong>France</strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social-links">
+                            <a href="#" target="_blank" class="contact-social-btn" id="social-github" aria-label="GitHub de l'étudiant">GH</a>
+                            <a href="#" target="_blank" class="contact-social-btn" id="social-linkedin" aria-label="LinkedIn de l'étudiant">IN</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-card">
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Nom complet</label>
+                                    <input type="text" id="form-name" class="form-control" placeholder="Ex: Jean Dupont" required autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Adresse e-mail</label>
+                                    <input type="email" id="form-email" class="form-control" placeholder="Ex: jean.dupont@email.com" required autocomplete="email">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-subject">Sujet du message</label>
+                                    <input type="text" id="form-subject" class="form-control" placeholder="Ex: Renseignement / Prise de contact" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message">Votre message</label>
+                                <textarea id="form-message" class="form-control" placeholder="Rédigez votre message ici..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer mon message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================
+         PIED DE PAGE (FOOTER)
+         ========================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo" style="background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Portfolio - Ilyass Daoudi
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+                Étudiant en BTS Services Informatiques aux Organisations (SIO)
+            </p>
+            
+            <nav class="footer-nav" aria-label="Navigation secondaire">
+                <a href="#accueil" class="footer-link">Accueil</a>
+                <a href="#apropos" class="footer-link">À propos</a>
+                <a href="#parcours" class="footer-link">Parcours</a>
+                <a href="#competences" class="footer-link">Compétences</a>
+                <a href="#realisations" class="footer-link">Réalisations</a>
+                <a href="#veille" class="footer-link">Veille Tech</a>
+            </nav>
+            
+            <div class="footer-copyright">
+                &copy; <span id="footer-year">2026</span> <span id="footer-name">Ilyass Daoudi</span>. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================================
+         COMPOSANT DÉTAILS PROJET (MODAL)
+         ========================================================= -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-header-text">
+                    <span id="modal-category">Option</span>
+                    <h3 id="modal-title">Titre du Projet</h3>
+                </div>
+                <button class="modal-close-btn" id="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4>Contexte de réalisation</h4>
+                    <p id="modal-context">Activité pratique</p>
+                </div>
+                <div class="modal-section">
+                    <h4>Description détaillée</h4>
+                    <p id="modal-description">Détails du projet...</p>
+                </div>
+                <div class="modal-section">
+                    <h4>Compétences développées</h4>
+                    <ul class="modal-skills-list" id="modal-skills-linked">
+                        <!-- Compétences associées injectées par app.js -->
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h4>Technologies utilisées</h4>
+                    <div class="modal-tags-list" id="modal-tags">
+                        <!-- Tags injectés par app.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
